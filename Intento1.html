@@ -1,0 +1,381 @@
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="marquis.css">
+<link rel="stylesheet" href="marcosletra.css">
+<link rel="preload" href="TheStarintheMidnight.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+.bgimg, .bgimg2, .bgimg3, .bgimg4{
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.bgimg {background-image: url("img/Atardecer 3.jpg")}
+.bgimg2 {background-image: url("img/Boda.jpg")}
+.bgimg3 {background-image: url("img/Boda.jpg")}
+
+
+.marcos-letra{
+    font-family: 'The Star in the Midnight';
+    font-weight: normal;
+    font-style: normal;
+}
+
+</style>
+
+<style>
+@font-face {
+font-family: 'The Star in the Midnight';
+src: url('TheStarintheMidnight.woff2') format('woff2'),
+url('TheStarintheMidnight.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+
+
+
+h1
+{
+font-family: 'The Star in the Midnight';
+display: block;
+font-size: 30px;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+
+h3
+{
+font-family: 'The Star in the Midnight';
+display: block;
+font-size: 45px;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;
+margin-right: 0;
+font-weight: lighter;
+}
+
+
+h5
+{
+font-family: 'The Star in the Midnight';
+display: block;
+font-size: 30px;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;
+margin-right: 0;
+font-weight: lighter;
+}
+
+h6
+{
+font-family: 'The Star in the Midnight';
+display: block;
+font-size: 20px;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+
+</style>
+
+
+
+
+<body>
+
+
+
+<!--- aqui cargamos las variables de cuenta.js-->
+<script language="JavaScript" src="cuenta.js"></script>
+
+
+
+<!-- creo el modal que se abre al apretar el boton -->
+<div class="w3-container" widht="90%">
+  
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white w3-hover-white"></button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <!-- creo la X para cerrar el boton -->
+      <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright w3-teal">&times;</span>
+     
+      <img src="img/SavetheDate3.jpg" class="w3-image w3-center" alt="Photo of Me" width="100%"> 
+      
+    </div>
+  </div>
+</div>
+
+<!-- creo un script que lo que hace es apretar el boton -->
+<script>
+
+document.getElementById('id01').style.display='block'
+
+</script>
+
+
+<!--- hasta aqui el modal -->
+
+
+<div class="w3-display-container w3-wide bgimg" id="home">
+  <div class="w3-display-topmiddle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-padding-64 w3-text-teal"><span class="w3-padding w3-opacity-min"><b>¡¡Nos Casamos!!</b></span> </h1>
+    <!--- esto es el contador, que lo lee de cuenta.js -->
+    <!--- Ojo!! No sé que pasa cuando termina la cuenta atras, jajaja. Creo que vuelve a contar cuestion de entrar en codepen y encontrar un js que te guste -->
+        <div class="container">
+          <!--- <h2 class="w3-xxlarge w3-padding-64 w3-text-teal"><span class="w3-padding w3-opacity-min">y cada vez falta menos</h2>-->
+          <h6>
+          <div id="countdown" class=" w3-text-teal">
+            <b>
+              <span  id="days"></span> Días <br>
+              <span  id="hours"></span> Horas <br>
+              <span id="minutes"></span> Minutos <br>
+              <span id="seconds"></span> Segundos <br>
+            </b>
+          </div>
+          </h6>
+        </div>
+  </div>
+</div>
+
+
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-wide w3-padding w3-card w3-teal">
+    <a href="#home" class="w3-bar-item w3-button w3-text-sand w3-hide-small w3-hover-teal"> <h1>Laura y Marcos</h1></a>
+    <a href="#home" class="w3-bar-item w3-button w3-text-sand w3-hide-medium w3-hide-large w3-hover-teal"> <h1>L&M</h1></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right">
+
+      <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-teal w3-text-sand"><h1>Localización</h1></a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-teal w3-text-sand"><h1>Asistencia</h1></a>
+      <a href="#asist" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-teal w3-text-sand"><h1>Regalo</h1></a>
+    </div>
+
+    <div class="w3-dropdown-hover w3-right w3-teal w3-hide-large w3-hover-teal w3-text-sand">
+      <button class="w3-button w3-hover-teal w3-teal w3-text-sand">&#9776</button>
+      <div class="w3-dropdown-content w3-bar-block w3-border w3-teal w3-hover-teal w3-text-sand" style="right:0">
+        <a href="#projects" class="w3-bar-item w3-button w3-hover-teal"><h5>Localización</h5></a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hover-teal"><h5>Asistencia</h5></a>
+        <a href="#asist" class="w3-bar-item w3-button w3-hover-teal"><h5>Regalo</h5></a>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+function myFunction() {
+var x = document.getElementById("demo");
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else {
+x.className = x.className.replace(" w3-show", "");
+}
+}
+</script>
+
+
+<!-- Header 
+<header class="w3-display-container w3-content w3-wide" style="max-width:1564px;" id="home">
+  <center> <img class="w3-round" src="img/Atardecer 3.jpg" alt="Architecture" style="width: :100%"> </center>
+  <div class="w3-display-topmiddle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>¡¡Nos casamos!!</b></span> </h1>
+      <h2><span class="w3-hide-small w3-text-light-grey">¿Estais preparados?</span></h2>
+  </div>
+</header>
+-->
+<!-- Page content -->
+<div class="w3-padding w3-yellow" style="width: 100%">
+
+  <!-- Location Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light w3-border-sand w3-padding-16 w3-text-sand">Localización</h3>
+  </div>
+
+  <div class="w3-container w3-center w3-hide-small">
+  <div class="w3-row-padding">
+      <div class="w3-col s4_bis w3-margin-bottom" justify="center">
+        <div class="w3-display-container">
+          <div class="w3-display-top w3-teal w3-padding w3-text-sand">Iglesia
+          </div>
+          <a href="https://www.google.es/maps/place/San+Jer%C3%B3nimo+el+Real/@40.4140218,-3.6906643,553m/data=!3m1!1e3!4m13!1m7!3m6!1s0xd42289fd23f909f:0xfc3b537188e637c6!2sJer%C3%B3nimos,+Madrid!3b1!8m2!3d40.415072!4d-3.6932785!3m4!1s0xd42289d7445cc67:0x5072f96c241507c2!8m2!3d40.4142162!4d-3.690681?hl=es">
+                <img src="img/Jeronimos.jpg" alt="House" style="width:100%">
+                </a>
+        </div>
+        <p class="w3-text-sand">La ceremonia tendrá lugar en la Parroquia de San Jerónimo el Real (C/Moreto, 4) a las 18:00</p>
+      </div>
+    
+      <div class="w3-col s3 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-top w3-teal w3-padding w3-text-sand">Transporte
+          </div>
+          <img src="img/Camello 1.jpg" alt="House" style="width:100%">
+        </div>
+              <p class="w3-text-sand"> Se dispondrá de servicio de autobuses entre la Iglesia y la Finca, dado que la finca no cuenta con parking propio. En el siguiente enlace te sugerimos dos lugares de aparcamiento cercanos</p>
+        <div class="w3-container w3-teal w3-text-sand">
+          <h1> <br><span>&#9888;</span></h1>
+          <p> No olvides indicar en el apartado de Asistencia si utilizarás el serivicio de autobús para no quedarte en tierra...
+        </div>
+      </div>
+
+      <div class="w3-col s4_bis w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-top w3-teal w3-padding w3-text-sand">Finca
+          </div>
+          <a href="https://www.google.com/maps/place/La+Gaivota/@40.4629175,-3.7826498,553m/data=!3m1!1e3!4m5!3m4!1s0x0:0x22f9169affe5fc13!8m2!3d40.4620314!4d-3.7826866">
+          <img src="img/La Gaivota 2.jpg" alt="House" style="width:100%">
+        </a>
+        </div><p class="w3-text-sand"> El coctail se celebrará en la Finca La Gaivota (C/ Ardales, s/n) a las 20:00</p>
+        </div>
+
+  </div>
+  </div>
+
+  <div class="w3-container w3-center w3-hide-large w3-hide-medium">
+  <div class="w3-row-padding">
+      <div class="w3-col w3-margin-bottom" justify="center">
+        <div class="w3-display-container">
+          <div class="w3-display-top w3-teal w3-padding w3-text-sand">Iglesia
+          </div>
+          <a href="https://www.google.es/maps/place/San+Jer%C3%B3nimo+el+Real/@40.4140218,-3.6906643,553m/data=!3m1!1e3!4m13!1m7!3m6!1s0xd42289fd23f909f:0xfc3b537188e637c6!2sJer%C3%B3nimos,+Madrid!3b1!8m2!3d40.415072!4d-3.6932785!3m4!1s0xd42289d7445cc67:0x5072f96c241507c2!8m2!3d40.4142162!4d-3.690681?hl=es">
+                <img src="img/Jeronimos.jpg" alt="House" style="width:100%">
+                </a>
+        </div>
+        <p class="w3-text-sand">La ceremonia tendrá lugar en la Parroquia de San Jerónimo el Real (C/Moreto, 4) a las 18:00</p>
+      </div>
+    
+      <div class="w3-col w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-top w3-teal w3-padding w3-text-sand">Transporte
+          </div>
+          <img src="img/Camello 1.jpg" alt="House" style="width:100%">
+        </div>
+              <p class="w3-text-sand"> Se dispondrá de servicio de autobuses entre la Iglesia y la Finca, dado que la finca no cuenta con parking propio. En el siguiente enlace te sugerimos dos lugares de aparcamiento cercanos</p>
+        <div class="w3-container w3-teal w3-text-sand">
+          <h1><br><span>  &#9888;</span></h1>
+          <p> No olvides indicar en el apartado de Asistencia si utilizarás el serivicio de autobús para no quedarte en tierra...
+        </div>
+      </div>
+
+      <div class="w3-col w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-top w3-teal w3-padding w3-text-sand">Finca
+          </div>
+          <a href="https://www.google.com/maps/place/La+Gaivota/@40.4629175,-3.7826498,553m/data=!3m1!1e3!4m5!3m4!1s0x0:0x22f9169affe5fc13!8m2!3d40.4620314!4d-3.7826866">
+          <img src="img/La Gaivota 2.jpg" alt="House" style="width:100%">
+        </a>
+        </div><p class="w3-text-sand"> El coctail se celebrará en la Finca La Gaivota (C/ Ardales, s/n) a las 20:00</p>
+        </div>
+
+  </div>
+  </div>
+
+
+
+   </div>
+
+  <!-- Segunda Foto -->
+
+  <div class="w3-display-container w3-wide bgimg3"  id="home">
+    
+  </div>
+
+
+  <!-- Contact Section -->
+ <div class="w3-padding-16 w3-yellow" >
+
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light w3-border-sand w3-padding-16 w3-text-sand">Asistencia</h3>
+  </div>
+
+    <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSfsxOCkHm1eMxNh6ZlsniN9yoVrAgzoLmXkJxySofe2eJw9pQ/formResponse?" target="_blank" class="w3-container w3-card-4 w3-teal w3-margin">
+
+      <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+        <input class="w3-input w3-border" name="entry.820954129" type="text" placeholder="Nombre y Apellidos">
+        </div>
+      </div>
+
+      <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+        <input class="w3-input w3-border" name="entry.1270026814" type="text" placeholder="Nombre y Apellidos Acompañante">
+        </div>
+      </div>
+
+      <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+          <select class="w3-input w3-border" name="entry.1049703668">
+            <option value="" disabled selected>¿Utilizaréis Autobus?</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+         <input class="w3-input w3-border" name="entry.404359742" type="text" placeholder="¿Dónde vives?">
+        </div>
+      </div>
+
+      <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="entry.555624999" type="text" placeholder="Alergias">
+        </div>
+      </div>
+
+      <div class="w3-row w3-section">
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+        <div class="w3-rest">
+          <input class="w3-input w3-border" name="entry.833112689" type="text" placeholder="Mensaje">
+        </div>
+      </div>
+
+      <button class="w3-button w3-teal w3-right w3-section w3-text-sand" type="submit" value="Submit">
+        <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
+      </form>
+
+</div>
+
+<div class="w3-display-container w3-wide bgimg" id="home"></div>
+
+<div class="w3-padding-16 w3-yellow" >
+
+<div class="w3-container w3-padding-32" id="asist">
+    <h3 class="w3-border-bottom w3-border-light w3-border-sand w3-padding-16 w3-text-sand">Regalo</h3>
+  </div>
+
+</div>
+
+
+
+<!-- End page content -->
+
+</body>
+
+
+
+</html>
